@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+*{
+        margin:0;
+        padding: 0;
+        
+}
+
+$color-primary: rgb(34, 25, 26);
+$color-secondary: rgb(82, 36, 207);
+$color-tertiary: pink; 
+$color-text-main: rgb(158, 152, 152); // on dark
+$color-text-second: rgb(212, 135, 148);  // on dark
+ 
+
+
+
+body, html {
+    font-family:'Montserrat';
+    //baccolor:white;
+    margin:0;
+    background-color: $color-primary;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: $color-text-main; 
+    margin:0;
+    padding: 0;
+    height: 100vh;
+
+        a {
+            text-decoration: none;
+        }
+
+     }
+
+
+
+
+
+/*logo and burger nav*/
+     header {
+         padding: 2em;
+
+         .logo {
+             color: rgb(218, 41, 224);
+             font-weight: bold;
+         }
+
+         .menu-btn {
+             width: 80px;
+             float:right;
+             color: rgb(218, 41, 224);
+             cursor: pointer;
+         }
+     }
+/*ends burger & logo nav*/
+
+
+/*Hero section*/
+    #wrapper {
+         width:100%;
+         margin: 0 auto;
+        // display:flex;
+        
+        font-weight: bold;
+       
+
+
+           &::before { //adds line above h1
+               content: '';
+//-border-top: .5px solid rgba(143, 24, 123, 0.842);
+               display: block;
+               width: 80%;
+               padding-bottom: 1em;
+           }
+       
+        }
+
+        .info1 {
+            margin: auto 4.7em;
+            letter-spacing: 1em;
+            line-height: 2em;
+            width: 15em;
+            //margin: 1em;
+            text-align: right;
+            //color:black; 
+            animation: fadeIn 3s ease-in;
+            -webkit-animation: fadeIn 3s ease-in;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+
+
+       
+                &:link {
+                  border: 5px solid rgb(191, 15, 207);
+                }
+                
+                &:hover {
+                    border: 20px solid rgb(191, 15, 207);
+                  
+                }
+              }
+
+
+         .info2 {
+            //-margin: auto 6em;
+            //autotocenter//-width:70%;
+            letter-spacing: 1em;
+            line-height: 2em;
+           // color:black;
+            width: 18em;
+            margin: 1em;
+            text-align: left;
+            padding: .5em 0em .5em 1em;
+            animation: fadeIn 10s;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation: fadeIn 10s;
+}
+            /*animation-delay: 10s;
+            animation-timing-function: linear;
+            -webkit-animation: fadeIn 10s;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;*/
+
+        
+    
+          
+      
+
+         .info3, .info4, .info5, .info6 {
+             //-margin: auto 6em;
+             //autotocenter//-width:70%;
+             letter-spacing: 1em;
+             line-height: 2em;
+             text-align: right;
+             padding-left: 1em;
+             animation: fadeIn 15s;
+             //animation-delay: 15s;
+             -webkit-animation: fadeIn 15s;
+             -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+                animation-timing-function: linear;
+             backface-visibility: hidden;
+             -webkit-backface-visibility: hidden;
+}
+
+
+
+
+         
+          
+  
+     
+     nav {
+        position: absolute;
+        background: $color-primary;
+        padding: 2em;
+        width:calc(100% - 4em);
+        height: calc(100vh - 4em);
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform-origin: left;
+        
+        z-index: 999999;
+
+
+
+        .close-btn{
+        
+            width:18px;
+            float:right;
+            cursor:pointer;
+            opacity: 0;
+
+        }
+
+
+        ul {
+
+            list-style-type: none;
+            margin: 15% auto 0 auto;
+            padding: 0; // removes default browser padding on ul!
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            width:80%;
+
+            a {
+                color:white;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            
+            span {
+                color:gray;
+                display: block;
+                font-size: 1.25em;
+                margin-top: 20px;
+            }
+
+            li {
+                opacity: 0;
+            }
+        }
+    }
+
+    //SLIDE IN MENU //
+    //\\\/////\\\\///
+
+
+    .show-menu {
+        display: block;
+        animation: slide-menu 1s ease-in forwards;
+                        
+        
+        .close-btn {
+        -webkit-animation: slide-menu 1s ease-in forwards;
+
+           animation: show-x 1s 1s forwards;
+        }        
+  
+
+   
+
+        li:nth-of-type(1){
+            animation:menu-item-anim .6s forwards 1s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1s ease-in-out;
+        }
+
+
+        li:nth-of-type(2){
+            animation:menu-item-anim .6s forwards 1.2s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.2s ease-in-out;
+        }
+
+
+        li:nth-of-type(3){
+            animation:menu-item-anim .6s forwards 1.4s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.4s ease-in-out;
+        }
+
+
+        li:nth-of-type(4){
+            animation:menu-item-anim .6s forwards 1.6s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.6s ease-in-out;
+        }
+
+
+////\\\\ end of slide in menu////
+//\\\\\//////\\\\\\\\\////////   
+
+
+    #olay-proj {
+        position: absolute;
+        display:flex;
+        
+        background: red;
+        padding: 2em;
+        width:calc(100vh - 4em);
+        height: calc(100vh - 4em);
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform-origin: left;
+
+
+        ul {
+
+            list-style-type: none;
+            padding: 0; // removes default browser padding on ul!
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            width:100%;
+
+            a {
+                color: pink;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            
+            span {
+                color:gray;
+                display: block;
+                font-size: 1.25em;
+                margin-top: 20px;
+            }
+
+            li {
+                opacity: 0;
+            }
+        }
+    }
+
+
+        .footer {
+            width: 80px;
+            float:right;
+            color: rgb(218, 41, 224);
+            cursor: pointer;
+        }
+
+
+    @keyframes slide-menu {
+    from {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+    } 
+        to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1); //do this -- update nav above to reflect this
+        }
+    }
+
+
+
+    @keyframes show-x {
+        from {
+            opacity: 0; 
+        } 
+            to {
+                opacity:1;
+            }
+        }
+
+
+        @keyframes menu-item-anim {
+            from {
+                transform:translateY(30%);
+                -webkit-transform:translateY(30%);
+                -moz-transform:translateY(30%);
+                -ms-transform:translateY(30%);
+                -o-transform:translateY(30%);
+                opacity: 0;
+            } 
+                to {
+                 transform:translateY(0);
+                 opacity:1;
+                 -webkit-transform:translateY(0);
+                 -moz-transform:translateY(0);
+                 -ms-transform:translateY(0);
+                 -o-transform:translateY(0);
+}
+            }
+
+
+        
+    
+        /* FLEX CONTAINER -- CHANGE TO FADE IN ANIMATION
+        */
+        @keyframes fadeIn{ 
+            0% {
+                visibility: hidden;
+                opacity: 0;
+                transform: translateZ(-5px);
+                -webkit-transform: translateZ(-5px);
+                -moz-transform: translateZ(-5px);
+                -ms-transform: translateZ(-5px);
+                -o-transform: translateZ(-5px);
+}
+        
+        80% {
+                opacity: 1;
+                transform: translateZ(50px)    ;
+                -webkit-transform: translateZ(50px)    ;
+                -moz-transform: translateZ(50px)    ;
+                -ms-transform: translateZ(50px)    ;
+                -o-transform: translateZ(50px)    ;
+}
+            
+            100% {
+                opacity: 4;
+                transition:0;
+                transform: translateZ(200px);
+                -webkit-transform: translateZ(200px);
+                -moz-transform: translateZ(200px);
+                -ms-transform: translateZ(200px);
+                -o-transform: translateZ(200px);
+                -webkit-transition:0;
+                -moz-transition:0;
+                -ms-transition:0;
+                -o-transition:0;
+}
+    }
+
+
+    }
