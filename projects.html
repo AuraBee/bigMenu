@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+   <style>
+
+
+.projborder {
+        opacity: 0.6;
+        transition: 0.3s;
+        
+       }
+
+
+            .projborder:hover{
+            opacity: 5;
+            border:5px;
+
+              } 
+
+   </style>
+
+    <title>Beeeg Menu</title>
+</head>
+
+<body>
+    <nav id="overlay"><!--blackground-->
+        <img src="images/close-mn.svg" class="close-btn" id="close-menu"></a>
+       
+        <ul class="overlay">
+                <li style="border: .3px solid blue; height: 50vh; margin:0 2em 2em 0">
+                    <a href="index.html">Home</a>
+                    <span>Return</span>
+                </li>
+
+                <li style="border: .5px solid pink; height: 40vh; margin: 1em 2em 2em 0;">
+                    <a href="">About</a>
+               
+                    <span>Discover</span>
+                </li>
+
+                <li style="border: .5px solid purple; height: 30vh; margin: 1.5em 2em 2em 0">
+                    <a href="projects.html">Projects</a>
+                    <span>Engage</span>
+                </li>
+
+                <li style="border: .5px solid orange; height: 20vh; margin:2em 2em 2em 0">
+                    <a href="#">Contact</a>
+                    <span></span>
+                </li>
+            </ul>
+        </nav>  
+       
+
+
+        
+<header>
+<!--DO THIS HERE --- addd color switch / onclick darK - LIGHT..-->
+    <a href="index.html" class="logo" style="color:blue;">logo</a> 
+           <img src="images/menu.svg" class="menu-btn" id="open-menu" style="color:blue;"></a>
+</header>
+
+
+
+
+
+        <h2 style="margin: 1em 0 0 2em; text-transform: uppercase; color:gray">Projects</h2>
+            <section id="ovrlay2"> <!--blackground-->
+          <img src="images/close-mn.svg" class="close-btn"  id="close-menu"></a>
+   
+
+           <ul id="proj-lay">
+
+                    <li class="projborder" style="border: .3px solid blue;  
+                    text-orientation: upright; text-align: center; padding-left: 5em;  top:10%;height: 40vh; ">
+                        <a href="index.html">One</a><!--DO THIS ... direction vertical, animate to hinge drop left..-->
+           </br>
+                        <span<>nice work maan</span>
+                    </li>
+    
+                    <li class="projborder" style="border: .5px solid pink;height: 50vh; text-align: center"> <!--writing-mode: vertical-lr; height: 40vh; margin: 1em 2em 2em 0;-->
+                        <a href="#">Two</a>
+                        <span style="writing-mode: vertical-lr;
+                        text-orientation: upright;">howdy doody dude</span>
+                    </li>
+    
+                    <li class="projborder" style="border: .5px solid purple;  height:50vh; margin-top:40%;"><!--writing-mode: vertical-lr; height: 30vh;margin: 1em 2em 2em 0;-->
+                        <a href="#">Three</a>
+                        <span style="writing-mode: vertical-lr;
+                        text-orientation: upright;">Ping Pong poow</span>
+                    </li>
+    
+                    <li class="projborder" style="border: .5px solid orange;  height:40vh;"> 
+                            <a href="#">Four</a>
+                        <span style="writing-mode: vertical-lr;width:30vh; height: 20vh;">
+                            ready  thee art</span>       
+                    </li>
+               
+                </ul>
+
+
+        
+
+
+
+
+
+<script>
+    //do - create variable to refeerence overlay id and close button
+    var overlay = document.getElementById('overlay');
+    var closeMenu = document.getElementById('close-menu');
+
+    
+    document.getElementById('open-menu').addEventListener('click', function() {
+        overlay.classList.add('show-menu');
+    });
+
+
+        
+    document.getElementById('close-menu').addEventListener('click', function() {
+        overlay.classList.remove('show-menu');
+    });
+
+
+
+    var overlay2 = document.getElementById('ovlay');
+
+
+
+
+
+    </script>
+</body>
+</html>

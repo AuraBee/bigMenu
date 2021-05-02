@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+ 
+   <style>
+       .info1-border, 
+       .info2-border, 
+       .info3-border 
+    { 
+        opacity: 0.6;
+        transition: 0.3s;
+        
+       }
+   
+       .info1-border:hover,
+       .info2-border:hover,
+       .info3-border:hover{
+            opacity: 5;
+            border:5px;
+
+              }
+
+
+
+/*menu page*/
+
+   
+       #layover .menu1:hover,
+       .menu2:hover,
+       .menu3:hover,
+       .menu4:hover{
+            opacity: 5;
+            border:5px;
+
+              }
+
+   </style>
+
+    <title>Beeeg Menu</title>
+</head>
+
+<body>
+    <nav id="overlay"><!--background-->
+
+
+        <img src="images/close-mn.svg" class="close-btn" id="close-menu"></a> 
+                                                    <!--close-menu ref'd in script below-->
+       
+        <ul class="menu-grp">
+                <li class="menu1" style="border: .5px solid blue; height: 50vh; margin:0 .2em 2em 0;">
+                    <a href="index.html"><h2 style=" color: orange;">Home</h2></a>
+                    <span></span>
+                </li>
+
+                <li class="menu2" style="border: .5px solid pink; height: 40vh; margin: 2.5em .2em 2em">
+                    <a href="about.html"><h2 style="padding-top: .1em; color: fuchsia; ">About </h2></a>
+                    <span></span>
+                </li>
+
+                <li class="menu2" style="border: .5px solid purple; height: 30vh; margin: 5em .2em 2em 0" >
+                    <a href="projects.html"><h2 style="padding-top: .2em; color:blue">Projects</h2></a>
+                    <span></span>
+                </li>
+
+                <li class="menu2" style="border: .5px solid orange; height: 20vh; margin: 7.5em .2em 2em 0">
+                    <a href="#"><h2 style="padding-top: .25em; color:pink ">Contact</h2></a>
+                    <span></span>
+                </li>
+            </ul>
+        </nav>  
+       
+
+            
+            <header>
+
+                <!--DO THIS HERE --- addd color switch / onclick darK - LIGHT..-->
+                <a href="index.html" class="logo">logo</a> 
+                    <img src="images/menu.svg" style="height: 10%;" class="menu-btn" id="open-menu"></a>
+            </header>
+
+                            
+                        
+            <div class="hero">
+                    <h2 class="info1 info1-border" >
+                        <span>S</span>
+                        <span>k</span>
+                        <span>y</span>
+                       <span>.</span>
+                         <!-- <span>s</span> -->
+                    </h2>
+
+                    <h1 class="info2 info2-border">
+                        <span>U</span> <span>X</span> /
+                         <span>U</span> <span>I</span>
+                    </br> 
+                         
+                        <span>D</span> <span>E</span>
+                      <span>S</span> <span>I</span>
+                        <span>G</span> <span>N</span>
+                        <!-- <span>E</span> <span>R</span> -->
+                    </h1>
+
+                    <section class="footer" id="sticky-footer">
+                            <div class="copyright" ><p>
+                                &copy;SkyByDesign: 2021 </p></div>
+                    </section>   
+
+         </div><!-- ends wrapper hero section -->
+                 
+            
+     
+
+    </section>
+    
+    
+
+
+
+</section>
+     <script>
+                let overlay = document.getElementById('overlay');
+                let closeMenu = document.getElementById('close-menu');
+
+                    document.getElementById('open-menu').addEventListener('click', function() {
+                        overlay.classList.add('show-menu');
+                    });
+
+
+                        
+                    document.getElementById('close-menu').addEventListener('click', function() {
+                        overlay.classList.remove('show-menu');
+                    });
+
+         </script>
+
+</body>
+</html>
