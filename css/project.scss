@@ -7,6 +7,7 @@
         
 }
 
+// body and utility set in main.css//
 
 $color-primary: rgb(34, 25, 26);
 $color-secondary: rgb(82, 36, 207);
@@ -20,10 +21,10 @@ $color-text-second: rgb(212, 135, 148);  // on dark
         
      
         margin: 0 auto;
-        //padding: 5em 10em 10em 20em;
+     
         height:95vh;
         width: 100vw;
-        background: pink;
+        background:lemonchiffon;
         display:flex;
         
        
@@ -34,7 +35,7 @@ $color-text-second: rgb(212, 135, 148);  // on dark
         ul {
             align-items: center;
            // position: absolute;
-            background-color:$color-primary;
+          
             list-style-type: none;
             margin: 0;
            //margin: 25% auto 0 auto;
@@ -69,7 +70,6 @@ $color-text-second: rgb(212, 135, 148);  // on dark
                 opacity: 0;
                 margin-top: 15%;
                 border: .3px solid blue;
-                //writing-mode: vertical-lr;
                 text-orientation: upright;
                 text-align: center;
                 padding-left: 5em;
@@ -80,49 +80,35 @@ $color-text-second: rgb(212, 135, 148);  // on dark
                 animation: fadeInRight 1s ease-in-backwards;
                 -webkit-animation: fadeInRight 1s ease-in-backwards;
                
-}
+                }
                
 
             }
         }
 
 
-               
-        /*.show-menu {
-            display: block;
-            animation: slide-menu 1s ease-in forwards;
-                            
-            
-            .close-btn {
-            -webkit-animation: slide-menu 1s ease-in forwards;
-    
-               animation: show-x 1s 1s forwards;
-            }    */    
-      
+
     
     
            li:nth-of-type(1){
               margin-left: 20em;
                animation:fadeInRight .6s forwards 1s ease-in-out;
                -webkit-animation:fadeInRight .6s forwards 1s ease-in-out;
-}
+            }   
     
     
            li:nth-of-type(2){
             margin-left: 10em;
                animation:fadeInRight .6s forwards 1.2s ease-in-out;
                -webkit-animation:fadeInRight .6s forwards 1.2s ease-in-out;
-}
+            }
     
     
            li:nth-of-type(3){
             animation:fadeInRight .6s forwards 1.6s ease-in-out;
             -webkit-animation:fadeInRight .6s forwards 1.6s ease-in-out;
 
-                // //margin-right: 40em;
-                // animation:fadeInRight .6s forwards 1.4s ease-in-out;
-                // -webkit-animation:fadeInRight 6s 1.4s ease-in-out;
-}
+            }
     
     
           li:nth-of-type(4){
@@ -131,49 +117,10 @@ $color-text-second: rgb(212, 135, 148);  // on dark
 
             }
       
+                                   
 
-       /*    &::before { //adds line above h1
-               content: '';
-//-border-top: .5px solid rgba(143, 24, 123, 0.842);
-               display: block;
-               width: 80%;
-               padding-bottom: 1em;
-           }*/
-       
-        
-
-        // .info1 {
-        //  margin: auto 4.7em;
-        //     letter-spacing: 1em;
-        //     line-height: 2em;
-        //     width: 15em;
-        //     //margin: 1em;
-        //     text-align: right;
-        // }
-
-        //  .info2 {
-             
-        //    //-margin: auto 6em; //auto to center
-        //    //-width:70%;
-        //     letter-spacing: 1em;
-        //     line-height: 2em;
-        //     width: 18em;
-        //     margin: 1em;
-        //     text-align: left;
-        //     padding: .5em 0em .5em 1em;
-        //   }
-    
-          
-          
-          #sub-section {
-                         
-            animation: fadeIn;
-            -webkit-animation: fadeIn;
-
-
- }
-          
   
+// @KEYFRAMES START HERE>>>>>>>>>>>>>>>>
 
         @keyframes slideInRight {
         from {
@@ -190,51 +137,35 @@ $color-text-second: rgb(212, 135, 148);  // on dark
                     -ms-transform: scaleX(1);
                     -o-transform: scaleX(1); //do this -- update nav above to reflect this
                     }
-                }
+            }
 
 
-        
-
-
-
-        @keyframes show-x {
-            from {
-                opacity: 0; 
-            } 
-                to {
-                    opacity:1;
-                }
+           @keyframes show-x {
+                from {
+                    opacity: 0; 
+                } 
+                    to {
+                        opacity:1;
+                    }
             }
     
 
-    @keyframes slide-menu {
-    from {
-        transform: scaleX(0);
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-        -o-transform: scaleX(0);
-    } 
-        to {
-        transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        -o-transform: scaleX(1); //do this -- update nav above to reflect this
+        @keyframes slide-menu {
+            from {
+                transform: scaleX(0);
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                -o-transform: scaleX(0);
+            } 
+                to {
+                transform: scaleX(1);
+                -webkit-transform: scaleX(1);
+                -moz-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                -o-transform: scaleX(1); //do this -- update nav above to reflect this
+                }
         }
-    }
-
-
-
-    @keyframes show-x {
-        from {
-            opacity: 0; 
-        } 
-            to {
-                opacity:1;
-            }
-        }
-
 
         @keyframes menu-item-anim {
             from {
@@ -250,7 +181,7 @@ $color-text-second: rgb(212, 135, 148);  // on dark
     
                  opacity:1;
                 }
-            }
+        }
 
 
 
@@ -262,16 +193,17 @@ $color-text-second: rgb(212, 135, 148);  // on dark
                 -moz-transform: translateZ(100px);
                 -ms-transform: translateZ(100px);
                 -o-transform: translateZ(100px);
-}
+                }
         
           80% {
-                transform: translateZ(-5px)    ;
-                -webkit-transform: translatez(-5px)    ;
-                -moz-transform: translatez(-5px)    ;
-                -ms-transform: translatez(-5px)    ;
-                -o-transform: translatez(-5px)    ;
-}
+                transform: translateZ(-5px) ;
+                -webkit-transform: translateZ(-5px) ;
+                -moz-transform: translateZ(-5px) ;
+                -ms-transform: translateZ(-5px) ;
+                -o-transform: translateZ(-5px) ;
+            }
             
+
             100% {
                 opacity: 1;
                 transform: translateZ(0);
@@ -280,6 +212,8 @@ $color-text-second: rgb(212, 135, 148);  // on dark
                 -moz-transform: translateZ(0);
                 -ms-transform: translateZ(0);
                 -o-transform: translateZ(0);
-        }
+            }
         
     }
+
+    // MEDIA QUERIES STARTING HERE>>>>>>>

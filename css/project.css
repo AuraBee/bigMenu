@@ -8,7 +8,7 @@
   margin: 0 auto;
   height: 95vh;
   width: 100vw;
-  background: pink;
+  background: lemonchiffon;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #22191a;
   list-style-type: none;
   margin: 0;
   display: -ms-grid;
@@ -67,16 +66,6 @@
   -webkit-animation: fadeInRight 1s ease-in-backwards;
 }
 
-/*.show-menu {
-            display: block;
-            animation: slide-menu 1s ease-in forwards;
-                            
-            
-            .close-btn {
-            -webkit-animation: slide-menu 1s ease-in forwards;
-    
-               animation: show-x 1s 1s forwards;
-            }    */
 li:nth-of-type(1) {
   margin-left: 20em;
   animation: fadeInRight .6s forwards 1s ease-in-out;
@@ -97,18 +86,6 @@ li:nth-of-type(3) {
 li:nth-of-type(4) {
   animation: fadeInRight .6s forwards 1.6s ease-in-out;
   -webkit-animation: fadeInRight .6s forwards 1.6s ease-in-out;
-}
-
-/*    &::before { //adds line above h1
-               content: '';
-//-border-top: .5px solid rgba(143, 24, 123, 0.842);
-               display: block;
-               width: 80%;
-               padding-bottom: 1em;
-           }*/
-#sub-section {
-  animation: fadeIn;
-  -webkit-animation: fadeIn;
 }
 
 @-webkit-keyframes slideInRight {
@@ -197,15 +174,6 @@ li:nth-of-type(4) {
   }
 }
 
-@keyframes show-x {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes menu-item-anim {
   from {
     transform: translateY(30%);
@@ -249,10 +217,10 @@ li:nth-of-type(4) {
   }
   80% {
     transform: translateZ(-5px);
-    -webkit-transform: translatez(-5px);
-    -moz-transform: translatez(-5px);
-    -ms-transform: translatez(-5px);
-    -o-transform: translatez(-5px);
+    -webkit-transform: translateZ(-5px);
+    -moz-transform: translateZ(-5px);
+    -ms-transform: translateZ(-5px);
+    -o-transform: translateZ(-5px);
   }
   100% {
     opacity: 1;
@@ -276,10 +244,10 @@ li:nth-of-type(4) {
   }
   80% {
     transform: translateZ(-5px);
-    -webkit-transform: translatez(-5px);
-    -moz-transform: translatez(-5px);
-    -ms-transform: translatez(-5px);
-    -o-transform: translatez(-5px);
+    -webkit-transform: translateZ(-5px);
+    -moz-transform: translateZ(-5px);
+    -ms-transform: translateZ(-5px);
+    -o-transform: translateZ(-5px);
   }
   100% {
     opacity: 1;

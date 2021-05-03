@@ -56,7 +56,8 @@ header .menu-btn:hover {
 }
 
 /*ends burger & logo nav*/
-/*scroll in menu nav & ul li  here >>>>>>>> */
+/*<<<<<<<<<<<<<
+  BIG MENU overlay >>>>>>>> */
 nav {
   position: absolute;
   background: #22191a;
@@ -95,6 +96,11 @@ nav ul {
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
   width: 80%;
+  margin: 0 auto;
+}
+
+nav ul li {
+  opacity: 0;
 }
 
 nav ul a {
@@ -105,24 +111,16 @@ nav ul a {
 
 nav ul span {
   color: gray;
-  display: block;
+  display: inline-block;
   font-size: 1.25em;
   margin-top: 20px;
 }
 
-nav ul li {
-  opacity: 0;
-  color: red;
-}
-
-/*ends here*/
 .show-menu {
-  display: block;
+  display: inline-block;
   -webkit-animation: slide-menu 1s ease-in forwards;
           animation: slide-menu 1s ease-in forwards;
   /*Hero section*/
-  /* keyframes FLEX CONTAINER -- CHANGE TO FADE IN ANIMATION
-        */
 }
 
 .show-menu .close-btn {
@@ -151,29 +149,14 @@ nav ul li {
 }
 
 .show-menu #wrapper {
-  max-width: 100vw;
+  width: 650px;
   margin: 0 auto;
+  margin: 4em;
   font-weight: bold;
   border: 1px solid #0de692;
 }
 
-.show-menu #wrapper .hero {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 3em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: center;
-  line-height: 2em;
-}
-
-.show-menu #wrapper .hero-title, .show-menu #wrapper .hero-sub-title {
-  margin: 0 auto;
-  text-align: left;
-  padding: .5em;
-}
-
-.show-menu #wrapper .hero-title {
+.show-menu .hero-title {
   border: 1px solid blue;
   margin: 0 2em 0 0;
   position: relative;
@@ -185,15 +168,15 @@ nav ul li {
   -webkit-backface-visibility: hidden;
 }
 
-.show-menu #wrapper .hero-title:link {
+.show-menu .hero-title:link {
   border: 5px solid #bf0fcf;
 }
 
-.show-menu #wrapper .hero-title:hover {
+.show-menu .hero-title:hover {
   border: 2px solid #bf0fcf;
 }
 
-.show-menu #wrapper .hero-sub-title {
+.show-menu .hero-sub-title {
   width: 5em;
   margin: 0 auto;
   margin-top: 0;
@@ -213,20 +196,20 @@ nav ul li {
   -webkit-backface-visibility: hidden;
 }
 
-.show-menu #wrapper .hero-sub-title .hero-title-border,
-.show-menu #wrapper .hero-sub-title .hero-sub-title-border {
+.show-menu .hero-sub-title .hero-title-border,
+.show-menu .hero-sub-title .hero-sub-title-border {
   opacity: 0.6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.show-menu #wrapper .hero-sub-title .hero-title-border:hover,
-.show-menu #wrapper .hero-sub-title .hero-sub-title-border:hover {
+.show-menu .hero-sub-title .hero-title-border:hover,
+.show-menu .hero-sub-title .hero-sub-title-border:hover {
   opacity: 5;
   border: 5px;
 }
 
-.show-menu #wrapper .footer {
+.footer {
   position: absolute;
   left: 50px;
   right: 50px;
@@ -236,12 +219,12 @@ nav ul li {
   padding: .5em;
 }
 
-.show-menu #wrapper .footer p {
+.footer p {
   font-size: 12px;
   font-weight: 200;
 }
 
-.show-menu #wrapper .social, .show-menu #wrapper .social-media {
+.social, .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +322,8 @@ nav ul li {
   }
 }
 
+/* keyframes FLEX CONTAINER -- CHANGE TO FADE IN ANIMATION
+    */
 @-webkit-keyframes fadeIn {
   0% {
     visibility: hidden;
@@ -371,7 +356,6 @@ nav ul li {
     -o-transition: 0;
   }
 }
-
 @keyframes fadeIn {
   0% {
     visibility: hidden;
@@ -402,6 +386,146 @@ nav ul li {
     -moz-transition: 0;
     -ms-transition: 0;
     -o-transition: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  }
+  #wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
+  .hero {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin: 3em;
+    padding: 2em;
+    text-align: right;
+    border: 1px solid lightsalmon;
+  }
+  .hero h2 {
+    font-weight: lighter;
+    font-size: small;
+  }
+  .hero span {
+    color: ivory;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #00DBDE;
+    background-image: -webkit-gradient(linear, left top, right top, from(#00DBDE), to(#FC00FF));
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  }
+  #wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5em 3em;
+    padding: 3em;
+  }
+  #wrapper .hero {
+    display: inline-block;
+    margin: 3em;
+    width: 40%;
+    margin: 0 auto;
+    border: #bf0fcf;
+    padding: 2em;
+    text-align: right;
+  }
+  #wrapper .hero h1 {
+    font-weight: bolder;
+    font-size: 2.5em;
+  }
+  #wrapper .hero h2 {
+    font-weight: lighter;
+    font-size: 1.5em;
+  }
+  #wrapper .hero span {
+    color: ivory;
+  }
+  #wrapper .footer {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  }
+  #wrapper {
+    border: 1px solid plum;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5em 3em;
+    padding: 3em;
+  }
+  #wrapper .hero {
+    display: inline-block;
+    margin: 3em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: right;
+  }
+  #wrapper .hero h1 {
+    font-weight: bolder;
+    font-size: 2.5em;
+  }
+  #wrapper .hero h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  #wrapper .hero span {
+    color: ivory;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: 10em;
+  }
+  h2 {
+    font-size: 2;
+    font-weight: lighter;
+  }
+  span {
+    color: ivory;
   }
 }
 /*# sourceMappingURL=main.css.map */
