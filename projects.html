@@ -27,7 +27,7 @@
 
    </style>
 
-    <title>Beeeg Menu</title>
+    <title>Big Menu</title>
 </head>
 
 <body>
@@ -37,18 +37,18 @@
         <ul class="overlay">
                 <li style="border: .3px solid blue; height: 50vh; margin:0 2em 2em 0">
                     <a href="index.html">Home</a>
-                    <span>Return</span>
+                    <span></span>
                 </li>
 
                 <li style="border: .5px solid pink; height: 40vh; margin: 1em 2em 2em 0;">
                     <a href="">About</a>
                
-                    <span>Discover</span>
+                    <span></span>
                 </li>
 
                 <li style="border: .5px solid purple; height: 30vh; margin: 1.5em 2em 2em 0">
                     <a href="projects.html">Projects</a>
-                    <span>Engage</span>
+                    <span></span>
                 </li>
 
                 <li style="border: .5px solid orange; height: 20vh; margin:2em 2em 2em 0">
@@ -59,57 +59,57 @@
         </nav>  
        
 
-
-        
-<header>
-<!--DO THIS HERE --- addd color switch / onclick darK - LIGHT..-->
-    <a href="index.html" class="logo" style="color:blue;">logo</a> 
-           <img src="images/menu.svg" class="menu-btn" id="open-menu" style="color:blue;"></a>
-</header>
-
+ 
+            <header>
+            <!--DO THIS HERE --- addd color switch / onclick darK - LIGHT..-->
+                <a href="index.html" class="logo" style="color:blue;">logo</a> 
+                    <img src="images/menu.svg" class="menu-btn" id="open-menu" style="color:blue;"></a>
+            </header>
 
 
 
 
-        <h2 style="margin: 1em 0 0 2em; text-transform: uppercase; color:gray">Projects</h2>
-            <section id="ovrlay2"> <!--blackground-->
-          <img src="images/close-mn.svg" class="close-btn"  id="close-menu"></a>
-   
+            <div id="project-wrapper"> 
 
-           <ul id="proj-lay">
 
-                    <li class="projborder" style="border: .3px solid blue;  
-                    text-orientation: upright; text-align: center; padding-left: 5em;  top:10%;height: 40vh; ">
-                        <a href="index.html">One</a><!--DO THIS ... direction vertical, animate to hinge drop left..-->
-           </br>
-                        <span<>nice work maan</span>
+                <div class="ovrlay2">
+
+                    <h2 style="margin: 1em 0 0 2em; text-transform: uppercase; color:gray">Projects</h2>
+                    
+                    <ul>
+                       
+                        <li class="projborder" style="border: .3px solid blue; margin:0; 
+                        text-orientation: upright; text-align: center; top:10%;height: 40vh; ">
+                            <a href="index.html">One</a><!--DO THIS ... direction vertical, animate to hinge drop left..-->
+                    </br>
+                        <span<></span>
                     </li>
     
-                    <li class="projborder" style="border: .5px solid pink;height: 50vh; text-align: center"> <!--writing-mode: vertical-lr; height: 40vh; margin: 1em 2em 2em 0;-->
+                    <li class="projborder" style="border: .5px solid pink; margin:0; height: 50vh; text-align: center"> <!--writing-mode: vertical-lr; height: 40vh; margin: 1em 2em 2em 0;-->
                         <a href="#">Two</a>
                         <span style="writing-mode: vertical-lr;
-                        text-orientation: upright;">howdy doody dude</span>
+                        text-orientation: upright;"></span>
                     </li>
-    
-                    <li class="projborder" style="border: .5px solid purple;  height:50vh; margin-top:40%;"><!--writing-mode: vertical-lr; height: 30vh;margin: 1em 2em 2em 0;-->
+ 
+                    <li class="projborder" style="border: .5px solid purple;  height:50vh; margin:0; margin-top:40%;"><!--writing-mode: vertical-lr; height: 30vh;margin: 1em 2em 2em 0;-->
                         <a href="#">Three</a>
                         <span style="writing-mode: vertical-lr;
-                        text-orientation: upright;">Ping Pong poow</span>
+                        text-orientation: upright;"></span>
                     </li>
     
-                    <li class="projborder" style="border: .5px solid orange;  height:40vh;"> 
+                    <li class="projborder" style="border: .5px solid orange; margin:0; height:40vh;"> 
                             <a href="#">Four</a>
                         <span style="writing-mode: vertical-lr;width:30vh; height: 20vh;">
-                            ready  thee art</span>       
+                            </span>       
                     </li>
                
                 </ul>
 
 
-        
+        </section>
 
 
-
+    </div>
 
 
 <script>
@@ -130,7 +130,7 @@
 
 
 
-    var overlay2 = document.getElementById('ovlay');
+    var overlay2 = document.getElementById('overlay');
 
 
 
